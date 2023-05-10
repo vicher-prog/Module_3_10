@@ -18,7 +18,9 @@ namespace Task5
                 {
                     specifiedNumber = rnd.Next(0, maxValue + 1);
                 }
-                Console.WriteLine("Загадано число, попробуйте его угадать.");
+                
+                Console.WriteLine($"Загадано число, попробуйте его угадать. Вводите числа от 0 до {maxValue} включительно,\nесли захотите завершить игру просто нажмите Enter");
+                
                 while (true)
                 {
                     string? numberString = Console.ReadLine();
@@ -36,7 +38,7 @@ namespace Task5
                         }
                         else
                         {
-                            Console.WriteLine($"Вы угадали загаданное число!");
+                            Console.WriteLine($"Вы угадали, загаданное число - {specifiedNumber}!");
                             break;
                         }
                     }
